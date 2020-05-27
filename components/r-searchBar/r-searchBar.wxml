@@ -1,0 +1,7 @@
+<!-- components/r-searchBar/r-searchBar.wxml -->
+<view class="searchBar">
+  <view class="searchMain">
+    <text class="iconfont icon-sousuo"></text>
+    搜索
+  </view>
+</view>

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "r-searchBar": "/components/r-searchBar/r-searchBar",
+    "r-movieItem": "/components/r-movieItem/r-movieItem"
+  },
+  "navigationBarTitleText": "首页"
+}

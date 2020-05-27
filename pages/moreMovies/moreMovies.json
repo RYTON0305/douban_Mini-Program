@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "r-movieItem":"/components/r-movieItem/r-movieItem"
+  }
+}

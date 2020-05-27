@@ -1,0 +1,9 @@
+<template name="starBox">
+  <view class="starBox">
+    <block wx:for="{{5}}" wx:for-item="star" wx:key="i" wx:for-index="i">
+      <image src="/assets/img/star_fill_whole.png" class="stars" mode="widthFix" wx:if="{{item.rating.stars/10>=i+1}}" />
+      <image src="/assets/img/star_fill_half.png" class="stars" mode="widthFix" wx:elif="{{item.rating.stars/10>=i&&item.rating.stars%10!=0}}" />
+      <image src="/assets/img/star_fill_none.png" class="stars" mode="widthFix" wx:else />
+    </block>
+  </view>
+</template>

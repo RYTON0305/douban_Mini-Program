@@ -1,0 +1,16 @@
+<import src="/pages/templates/star-template/star-template.wxml"></import>
+<view class="movieListItem" bindtap="handleToDetail">
+  <view class="movieImgBox">
+    <image wx:if='{{item.images.large}}' class="movieImg" src="{{item.images.large}}" binderror="handleImgError" />
+    <view wx:else class="errMsg">
+      <text class="iconfont icon-cuowu"></text>
+      图片加载失败
+    </view>
+  </view>
+  <view class="movieTitle">{{item.title}}</view>
+  <view class="rating">
+    <template is="starBox" data="{{item}}" wx:if='{{item.rating.average!==0}}'/>
+    <text class="score">{{homeWxs.fixFun(item.rating.average)}}</text>
+  </view>
+</view>
+<wxs src="../../pages/home/home.wxs" module="homeWxs"/>

@@ -1,0 +1,105 @@
+/* pages/home/home.wxss */
+
+/* 搜索板块 */
+.hearchHeader {
+  position: relative;
+  height: 78rpx;
+  z-index: 999;
+}
+
+.sbar {
+  position: fixed;
+  top: 0;
+}
+
+/* 搜索板块END */
+
+/* 电影板块 */
+.movieList {
+  margin-bottom: 30rpx;
+}
+
+.movieListHeader {
+  display: flex;
+  line-height: 28rpx;
+  justify-content: space-between;
+  padding: 30rpx 20rpx 30rpx;
+  font-size: 28rpx;
+  /* font-weight: bold; */
+}
+
+.headerTitle {
+  font-weight: bold;
+}
+
+.headerMore {
+  color: #42bd56;
+}
+
+.icon-you {
+  font-size: 28rpx;
+}
+
+.movieListBox {
+  display: flex;
+}
+
+.movieItem {
+  margin-left: 40rpx ;
+}
+/* .movieListItem {
+  width: 230rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+
+.movieImgBox {
+  width: 200rpx;
+  height: 300rpx;
+  background-color: #ccc;
+  border-radius: 10rpx;
+  line-height: 300rpx;
+  font-size: 24rpx;
+}
+
+.icon-cuowu {
+  font-size: 24rpx;
+}
+
+.movieImg {
+  width: 200rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+}
+
+.errMsg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+.movieTitle {
+  text-align: center;
+  font-size: 28rpx;
+  padding: 20rpx 0 8rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.rating {
+  display: flex;
+  line-height: 24rpx;
+  justify-content: space-evenly
+}
+
+.score {
+  font-size: 24rpx;
+  font-weight: bold;
+}
+.stars {
+  width: 24rpx;
+} */
+
+/* 电影板块END */

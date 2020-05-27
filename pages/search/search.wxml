@@ -1,0 +1,34 @@
+<!-- pages/search/search.wxml -->
+<!-- 搜索栏 -->
+<import src="/pages/templates/star-template/star-template.wxml"></import>
+<view class="searchBar">
+  <view class="searchMain">
+    <text class="iconfont icon-sousuo"></text>
+    <input class="searchInput" placeholder="搜索" bindinput="handleInput" auto-focus="{{true}}"/>
+  </view>
+</view>
+<!-- 搜索结果 -->
+<view class="searchList">
+  <view class="searchItem">
+    <view class="itemBox" wx:for="{{searchList}}" wx:key="id">
+      <image src="{{item.images.large}}" mode="widthFix" class="itemImg" />
+      <view class="info">
+        <view class="itemTitle">{{item.title}}</view>
+        <view class="rating">
+          <template is="starBox" />
+          <text class="average">9.0</text>
+        </view>
+        <view class="intro">
+          {{item.year}} /
+          <text wx:for="{{item.countries}}" wx:key='index' wx:for-item="country">{{country}} </text>
+          /
+          <text wx:for="{{item.genres}}" wx:key='index' wx:for-item='genre'>{{genre}} </text>
+          /
+          <text wx:for="{{item.directors}}" wx:key='index' wx:for-item='director'>{{director.name}} </text>
+          /
+          <text wx:for="{{item.casts}}" wx:key='index' wx:for-item='cast'>{{cast.name}} </text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

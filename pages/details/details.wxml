@@ -1,0 +1,51 @@
+<import src="/pages/templates/star-template/star-template.wxml"></import>
+<!-- 影片信息 -->
+<view class="movieInfo">
+	<image class="movieImg" mode='widthFix' src="{{images}}" mode="widthFix" />
+	<view class="movieTextBox">
+		<view class="movieName">{{title}}({{year}})</view>
+		<view class="info">
+			<text wx:for="{{genres}}" wx:key="index" wx:for-item="genres">{{genres}} </text>
+			/
+			<text wx:for="{{countries}}" wx:key="index" wx:for-item="country">{{country}} </text>
+			/ 片长000分钟
+		</view>
+		<view class="btnGroup">
+			<view class="userBtn">想看</view>
+			<view class="userBtn">看过</view>
+		</view>
+	</view>
+</view>
+<!-- 评分 -->
+<view class="rating">
+	<view>
+		<view class="score">{{homeWxs.fixFun(rating.average)}}</view>
+		<view class="star">
+			<template is="starBox" data="{{item:detailsList}}"  wx:if='{{rating.average!==0}}'/>
+		</view>
+	</view>
+
+</view>
+<wxs src="../../pages/home/home.wxs" module="homeWxs"/>
+
+<!-- 简介 -->
+
+<view class="introBox">
+	<view class="title">简介</view>
+	<view class="introText {{introExpand?'':'expandActive'}}">{{summary}}</view>
+	<text class="expandIntro" bind:tap="handleExpandIntro">{{introExpand?'收起':'展开'}}</text>
+</view>
+<view class="introBox">
+	<view class="title">影人</view>
+	<scroll-view scroll-x="{{true}}">
+		<view class="actorClass">
+			<block wx:for="{{casts}}" wx:for-item="cast" wx:key="index">
+				<view class="actorItem">
+					<image class="actorImg" src="{{cast.avatars.large}}" />
+					<view class="actorName">{{cast.name}}</view>
+					<!-- <view class="actorCate">职责</view> -->
+				</view>
+			</block>
+		</view>
+	</scroll-view>
+</view>

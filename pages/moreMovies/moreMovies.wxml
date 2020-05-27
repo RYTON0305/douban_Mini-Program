@@ -1,0 +1,6 @@
+<!-- pages/moreMovies/moreMovies.wxml -->
+<view class="moreBox">
+	<block wx:for="{{moreList}}" wx:key="id">
+		<r-movieItem class="movieItem" item='{{item}}' movieId='{{item.id}}'/>
+	</block>
+</view>

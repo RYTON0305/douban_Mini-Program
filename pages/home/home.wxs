@@ -1,0 +1,8 @@
+var fixFun = function (item) {
+  if (item === undefined) return
+  if (item === 0) return '暂无评分'
+  else return item.toFixed(1)
+}
+module.exports = {
+  fixFun: fixFun
+};

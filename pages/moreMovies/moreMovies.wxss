@@ -1,0 +1,13 @@
+/* pages/moreMovies/moreMovies.wxss */
+.moreBox {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  justify-content:space-between;
+  padding:40rpx;
+  grid-row-gap: 20px;
+  /* display: flex;
+  
+  flex-wrap: wrap;
+  justify-content: space-between; */
+ 
+}

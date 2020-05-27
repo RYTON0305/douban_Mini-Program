@@ -1,0 +1,139 @@
+/* pages/details/details.wxss */
+@import '/pages/templates/star-template/star-template.wxss';
+.movieInfo {
+  display: flex;
+  justify-content: space-evenly;
+  padding:40rpx 30rpx
+}
+
+.movieImg {
+  width: 200rpx;
+  height: 300rpx;
+  flex:1;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+
+.movieTextBox {
+  flex: 2;
+}
+
+.movieName {
+  font-size: 38rpx;
+  font-weight: bold;
+}
+
+.directors {
+  color: #888;
+}
+
+.info {
+  color: #888;
+  font-size: small;
+  margin: 30rpx 0;
+}
+
+.btnGroup {
+  display: flex;
+  justify-content: space-evenly;
+}
+.userBtn {
+  flex: 1;
+  text-align: center;
+  padding: 10rpx 0;
+  margin: 0 16rpx;
+  border-radius: 6rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  box-shadow: 0 0 10rpx #ccc;
+}
+
+/* 评分 */
+.rating {
+  height: 200rpx;
+  margin: 30rpx;
+  margin-top: 0;
+  border-radius:8rpx;
+  box-shadow: 0 0 10rpx #ccc;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.score {
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: 800;
+}
+
+.starBox {
+  width: 100%;
+}
+.starBox image {
+  width: 40rpx;
+}
+/* 评分END */
+
+/* 简介 */
+.introBox {
+  margin: 30rpx;
+  margin-top: 60rpx
+}
+
+.title {
+  font-weight: bold;
+  margin:20rpx 0
+}
+
+.introText {
+  font-size: 28rpx;
+}
+.expandIntro {
+  font-size: 28rpx;
+  float: right;
+  color: #bbb;
+  padding: 10rpx 0;
+}
+
+.expandActive {
+  overflow:hidden;
+  /* //超出的文本隐藏 */
+  text-overflow:ellipsis; 
+/* //溢出用省略号显示 */
+  display:-webkit-box;
+ /* //将对象作为弹性伸缩盒子模型显示。 */
+  -webkit-box-orient:vertical;
+ /* //从上到下垂直排列子元素（设置伸缩盒子的子元素排列方式） */
+  -webkit-line-clamp:4; 
+/* //这个属性不是css的规范属性，需要组合上面两个属性，表示显示的行数。 */
+}
+/* 简介END */
+
+/* 影人 */
+.actorClass {
+  display: flex;
+}
+
+.actorItem {
+  width: 150rpx;
+  margin-right: 20rpx;
+}
+
+.actorImg {
+  width: 150rpx;
+  height: 200rpx;
+  border-radius: 10rpx;
+}
+
+.actorName {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* .actorCate {
+  font-size: 22rpx;
+  color: #888;
+} */
+/* 影人END */

@@ -1,0 +1,16 @@
+/* components/r-searchBar/r-searchBar.wxss */
+.searchBar {
+  width: 750rpx;
+  background-color: #42bd56;
+  padding:10rpx 20rpx;
+  box-sizing: border-box;
+  text-align: center;
+  z-index: 999;
+}
+.searchMain {
+  border-radius: 10rpx;
+  background-color: #fff;
+  color: #ccc;
+  padding:8rpx;
+  font-size: 32rpx;
+}

@@ -1,0 +1,7 @@
+.starBox {
+  display: flex;
+  justify-content: space-evenly;
+}
+.starBox image{
+  padding: 0 2rpx;
+}

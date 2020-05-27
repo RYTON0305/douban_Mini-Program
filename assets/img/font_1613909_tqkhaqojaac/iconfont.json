@@ -1,0 +1,30 @@
+{
+  "id": "1613909",
+  "name": "movie小程序",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1026166",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "1279419",
+      "name": "错误",
+      "font_class": "cuowu",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "7587973",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    }
+  ]
+}

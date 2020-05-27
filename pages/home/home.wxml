@@ -1,0 +1,27 @@
+<!-- pages/home/home.wxml -->
+<!-- 1.头部搜索 -->
+<navigator class="hearchHeader" url="/pages/search/search" open-type="navigate">
+  <r-searchBar class="sbar"></r-searchBar>
+</navigator>
+<!-- 2.列表展示 -->
+<view class="movieBox">
+  <view class="movieList" wx:for='{{movieList}}' wx:for-item='movie' wx:key='type' wx:for-index='type'>
+    <!-- 列表头部 -->
+    <view class="movieListHeader">
+      <view class="headerTitle">{{movie.title}}</view>
+      <view class="headerMore" data-type='{{type}}' bind:tap="handleToMoreMovie">
+        查看更多
+        <text class="iconfont icon-you"></text>
+      </view>
+    </view>
+    <scroll-view scroll-x>
+      <view class="movieListBox">
+        <block wx:for='{{movieList[type].list}}' wx:key='id'>
+          <view class="movieItem">
+            <r-movieItem item='{{item}}' movieId='{{item.id}}' />
+          </view>
+        </block>
+      </view>
+    </scroll-view>
+  </view>
+</view>
